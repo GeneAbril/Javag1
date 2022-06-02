@@ -1,2 +1,1 @@
-# ClasesG1
-# ClasesG1
+# Claseg1
