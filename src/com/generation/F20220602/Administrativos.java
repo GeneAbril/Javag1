@@ -2,7 +2,7 @@ package com.generation.F20220602;
 
 public class Administrativos {
 
-	  //declaracion de variables
+    //declaracion de variables
     private String tipoAdministrador;
     private String areaACargo;
 
@@ -43,8 +43,19 @@ public class Administrativos {
                 ", areaACargo='" + areaACargo + '\'' +
                 '}';
     }
-    public void entradaySalida(){
 
+    public void trabajoEscritorio(boolean si, boolean areaProfe, boolean areAlumno){
+        //analisis de situacion economica alumno, manejo de recursos, estado profesores, postulaciones a concursos municipales, rondas en el colegio, pausa activa.
+        if(si && areaProfe && !areAlumno){
+            System.out.println("Las tareas asignadas de este administrativo encargado de los profesores son: \n 1.Contabilizar horas trabajadas");
+        } else if (si && areAlumno && !areaProfe) {
+            System.out.println("Las tareas asignadas de este administrativo encargado de los Alumons son: \n 1.Revision de estado economico de los estudiantes");
+
+        }else if(si && !areAlumno && !areaProfe){
+            System.out.println("Las tareas asignadas de este administrativo son: \n 1.Hacer postulaciones a concursos municipales");
+        }
+        else {
+            System.out.println("error en ingreso de datos, o el administrativo abarca muchas horas de trabajo");
+        }
     }
-
 }

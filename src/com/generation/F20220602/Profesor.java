@@ -58,7 +58,7 @@ public class Profesor {
 	public void entradaySalida(){
 
     }
-	
+	//METODO ASISTENCIA
 	public void Asistencia(List<String> alumnos) {
 		for (String alumno : alumnos) {//recorrer elemento lista alumnos
 			System.out.println(alumno + " " + "Presente");

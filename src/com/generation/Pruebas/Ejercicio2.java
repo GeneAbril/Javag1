@@ -1,24 +1,24 @@
 package com.generation.Pruebas;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Ejercicio2 {
 	public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        int num;
-        int supar=0;
-        int suimpar=0; 
-        System.out.println ("Introduce numero");
-        num = teclado.nextInt(); 
-        for(int ind=1;ind<=num;ind++) {
-            if(ind%2==0) {
-                supar+=ind;
-            }
-            else {
-                suimpar+=ind;
-            }	 
-        }
-        System.out.println ("La suma de los pares es "+supar);
-        System.out.println ("La suma de los impares es "+suimpar); 
-    }	 
+		Scanner sc = new Scanner(System.in);
+		
+		int numeros[] = new int [5];
+		
+		for(int i= 5 - 1; i>=0;i--) {
+			System.out.println( "Digite un numero");
+			numeros[i]=sc.nextInt();
+		}
+		for (int i : numeros) {
+			
+			System.out.println("numeros: " + i);
+			
+		}
+		
+	}
 }
+	
